@@ -56,7 +56,7 @@ setInterval( () =>  {client.user.setActivity(activities[i++ % activities.length]
 client.user
     .setStatus("dnd")
     .catch(console.error);
-    let channel = client.channels.cache.get('801638023098794005')
+    let channel = client.channels.cache.get('ID DO CANAL ONDE A PESSOA IRÁ REAGIR PARA INICIAR A WL')
     const fetched = await channel.messages.fetch({
       limit: 99
     });
@@ -87,7 +87,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
       type: 'text',
      
   }).then(async canal => {
- canal.setParent('801637966178418719')
+ canal.setParent('id da Categoria onde o canal temporário será criado')
  canal.overwritePermissions([
   {
       id: reaction.message.guild.roles.everyone,
@@ -102,7 +102,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
 let embed = new Discord.MessageEmbed()
 
 .setTitle('Pergunta número 1')
-.setDescription(`<:DIREITA:807800831079350303> Qual seu Nome e sua Idade na vida real?`)
+.setDescription(`Qual seu Nome e sua Idade na vida real?`)
 .setThumbnail('https://cdn.discordapp.com/attachments/457357965649772564/807776088200577054/After.png')
 .setFooter(`© Todos os direitos reservados para a cidade LuckCity RP.`)
 .setColor('ORANGE')
