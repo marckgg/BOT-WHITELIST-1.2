@@ -10,11 +10,11 @@ module.exports = {
         message.guild.member(user).roles.add('id do cargo')
         message.channel.send(`${message.author}, o usuário foi aprovado com sucesso!`)
 
-        const aprovar = client.channels.cache.get('801638024291024916')
+        const aprovar = client.channels.cache.get('id do canal onde irá mandar a mensagem que o membro foi aprovado')
 
         aprovar.send(`${user}`)
                             let aprovadolog = new Discord.MessageEmbed()
-                            .setTitle('<:LuckEMOTE:801366350194802739> Parabéns!!')
+                            .setTitle('Parabéns!!')
                             .setDescription(`Você foi aprovado!
                             
                             Aguarde o chamado para poder fazer a entrevista!`)
